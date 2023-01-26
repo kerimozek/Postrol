@@ -20,6 +20,12 @@
 		AB0C37A029827511009931F0 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C379F29827511009931F0 /* StoriesVC.swift */; };
 		AB0C37A4298292C0009931F0 /* StoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37A2298292C0009931F0 /* StoriesCell.swift */; };
 		AB0C37A5298292C0009931F0 /* StoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37A3298292C0009931F0 /* StoriesCell.xib */; };
+		AB0C37B12982A9D3009931F0 /* NewFollowersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37B02982A9D3009931F0 /* NewFollowersVC.swift */; };
+		AB0C37B32982A9E3009931F0 /* LostFollowersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37B22982A9E3009931F0 /* LostFollowersVC.swift */; };
+		AB0C37B62982A9FE009931F0 /* NewFollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37B42982A9FE009931F0 /* NewFollowersCell.swift */; };
+		AB0C37B72982A9FE009931F0 /* NewFollowersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37B52982A9FE009931F0 /* NewFollowersCell.xib */; };
+		AB0C37BA2982AA0C009931F0 /* LostFollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37B82982AA0C009931F0 /* LostFollowersCell.swift */; };
+		AB0C37BB2982AA0C009931F0 /* LostFollowersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37B92982AA0C009931F0 /* LostFollowersCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		AB0C379F29827511009931F0 /* StoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
 		AB0C37A2298292C0009931F0 /* StoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCell.swift; sourceTree = "<group>"; };
 		AB0C37A3298292C0009931F0 /* StoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCell.xib; sourceTree = "<group>"; };
+		AB0C37B02982A9D3009931F0 /* NewFollowersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowersVC.swift; sourceTree = "<group>"; };
+		AB0C37B22982A9E3009931F0 /* LostFollowersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFollowersVC.swift; sourceTree = "<group>"; };
+		AB0C37B42982A9FE009931F0 /* NewFollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFollowersCell.swift; sourceTree = "<group>"; };
+		AB0C37B52982A9FE009931F0 /* NewFollowersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFollowersCell.xib; sourceTree = "<group>"; };
+		AB0C37B82982AA0C009931F0 /* LostFollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFollowersCell.swift; sourceTree = "<group>"; };
+		AB0C37B92982AA0C009931F0 /* LostFollowersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LostFollowersCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +82,12 @@
 		AB0C3778298272EB009931F0 /* Postrol */ = {
 			isa = PBXGroup;
 			children = (
-				AB0C3795298274AD009931F0 /* Stories */,
+				AB0C37A72982A997009931F0 /* New Followers */,
+				AB0C37A62982A984009931F0 /* Lost Followers */,
 				AB0C378D29827394009931F0 /* Main */,
-				AB0C3779298272EB009931F0 /* AppDelegate.swift */,
-				AB0C377B298272EB009931F0 /* SceneDelegate.swift */,
+				AB0C37BC2982B03F009931F0 /* App */,
 				AB0C377F298272EB009931F0 /* Main.storyboard */,
 				AB0C3782298272ED009931F0 /* Assets.xcassets */,
-				AB0C3784298272ED009931F0 /* LaunchScreen.storyboard */,
-				AB0C3787298272ED009931F0 /* Info.plist */,
 			);
 			path = Postrol;
 			sourceTree = "<group>";
@@ -85,6 +95,7 @@
 		AB0C378D29827394009931F0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C3795298274AD009931F0 /* Stories */,
 				AB0C3790298273AD009931F0 /* Model */,
 				AB0C378F298273A7009931F0 /* ViewModel */,
 				AB0C378E2982739F009931F0 /* View */,
@@ -160,6 +171,101 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AB0C37A62982A984009931F0 /* Lost Followers */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37AD2982A9B3009931F0 /* ViewModel */,
+				AB0C37AC2982A9AF009931F0 /* Model */,
+				AB0C37AB2982A9AB009931F0 /* View */,
+			);
+			path = "Lost Followers";
+			sourceTree = "<group>";
+		};
+		AB0C37A72982A997009931F0 /* New Followers */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37AA2982A9A6009931F0 /* View Model */,
+				AB0C37A92982A9A2009931F0 /* Model */,
+				AB0C37A82982A99F009931F0 /* View */,
+			);
+			path = "New Followers";
+			sourceTree = "<group>";
+		};
+		AB0C37A82982A99F009931F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37B02982A9D3009931F0 /* NewFollowersVC.swift */,
+				AB0C37AF2982A9BB009931F0 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB0C37A92982A9A2009931F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB0C37AA2982A9A6009931F0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AB0C37AB2982A9AB009931F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37B22982A9E3009931F0 /* LostFollowersVC.swift */,
+				AB0C37AE2982A9B8009931F0 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB0C37AC2982A9AF009931F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB0C37AD2982A9B3009931F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB0C37AE2982A9B8009931F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37B82982AA0C009931F0 /* LostFollowersCell.swift */,
+				AB0C37B92982AA0C009931F0 /* LostFollowersCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AB0C37AF2982A9BB009931F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37B42982A9FE009931F0 /* NewFollowersCell.swift */,
+				AB0C37B52982A9FE009931F0 /* NewFollowersCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AB0C37BC2982B03F009931F0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C377B298272EB009931F0 /* SceneDelegate.swift */,
+				AB0C3779298272EB009931F0 /* AppDelegate.swift */,
+				AB0C3784298272ED009931F0 /* LaunchScreen.storyboard */,
+				AB0C3787298272ED009931F0 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0C3786298272ED009931F0 /* LaunchScreen.storyboard in Resources */,
+				AB0C37BB2982AA0C009931F0 /* LostFollowersCell.xib in Resources */,
 				AB0C37A5298292C0009931F0 /* StoriesCell.xib in Resources */,
 				AB0C3783298272ED009931F0 /* Assets.xcassets in Resources */,
 				AB0C3781298272EB009931F0 /* Main.storyboard in Resources */,
+				AB0C37B72982A9FE009931F0 /* NewFollowersCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,12 +341,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0C37A4298292C0009931F0 /* StoriesCell.swift in Sources */,
+				AB0C37B32982A9E3009931F0 /* LostFollowersVC.swift in Sources */,
 				AB0C379C298274EF009931F0 /* StoriesModel.swift in Sources */,
 				AB0C377E298272EB009931F0 /* MainVC.swift in Sources */,
 				AB0C377A298272EB009931F0 /* AppDelegate.swift in Sources */,
 				AB0C377C298272EB009931F0 /* SceneDelegate.swift in Sources */,
 				AB0C37A029827511009931F0 /* StoriesVC.swift in Sources */,
+				AB0C37BA2982AA0C009931F0 /* LostFollowersCell.swift in Sources */,
 				AB0C3794298273C8009931F0 /* MainModel.swift in Sources */,
+				AB0C37B62982A9FE009931F0 /* NewFollowersCell.swift in Sources */,
+				AB0C37B12982A9D3009931F0 /* NewFollowersVC.swift in Sources */,
 				AB0C379E298274F8009931F0 /* StoriesVM.swift in Sources */,
 				AB0C3792298273BA009931F0 /* MainVM.swift in Sources */,
 			);
