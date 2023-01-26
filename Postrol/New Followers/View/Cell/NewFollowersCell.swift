@@ -16,11 +16,11 @@ class NewFollowersCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         goToProfile.layer.cornerRadius = 6
         newFollowersImage.layer.cornerRadius = newFollowersImage.frame.width / 2
-        newFollowersImage.layer.cornerRadius = newFollowersImage.frame.width / 2
         newFollowersImage.layer.masksToBounds = true
-        newFollowersView.layer.cornerRadius = 12
+      
     }
 
     
