@@ -12,6 +12,7 @@ class MainVC: UIViewController {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var goAnalytics: UIButton!
     @IBOutlet weak var lostFollowersCount: UILabel!
     @IBOutlet weak var earnedFollowersCount: UILabel!
     @IBOutlet weak var lostFollowers: UIView!
@@ -42,6 +43,7 @@ class MainVC: UIViewController {
         profileView.layer.cornerRadius = profileView.frame.width / 2
         profileImage.layer.masksToBounds = true
         goStories.layer.cornerRadius = 12
+        goAnalytics.layer.cornerRadius = 12
         
         earnedFollowers.layer.borderWidth = 0.5
         earnedFollowers.layer.borderColor = UIColor.black.cgColor
@@ -64,6 +66,11 @@ class MainVC: UIViewController {
         
     }
     
+    @IBAction func goAnalytics(_ sender: Any) {
+        
+        
+        
+    }
     
 }
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="NewFollowersCell" customModule="Postrol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-if-Uwh">
+                        <rect key="frame" x="0.0" y="12" width="417" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="e40-NY-79l">
+                                <rect key="frame" x="8" y="0.0" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e40-NY-79l" secondAttribute="height" multiplier="1:1" id="xbj-EC-SHy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@serkan_tekel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b3-O9-cyH">
+                                <rect key="frame" x="94" y="24.666666666666664" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTr-50-rH7">
+                                <rect key="frame" x="309" y="17" width="100" height="36"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="PaE-OJ-Ix5"/>
+                                    <constraint firstAttribute="width" constant="100" id="WOM-XS-Byr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Profile">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToProfile:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xy7-o8-Zbr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e40-NY-79l" firstAttribute="top" secondItem="Mwv-if-Uwh" secondAttribute="top" id="ABc-7O-XpN"/>
+                            <constraint firstItem="FTr-50-rH7" firstAttribute="centerY" secondItem="Mwv-if-Uwh" secondAttribute="centerY" id="D7U-2D-0ht"/>
+                            <constraint firstAttribute="height" constant="70" id="OMw-kv-E8l"/>
+                            <constraint firstItem="9b3-O9-cyH" firstAttribute="leading" secondItem="e40-NY-79l" secondAttribute="trailing" constant="16" id="Ofx-Gg-Lig"/>
+                            <constraint firstItem="9b3-O9-cyH" firstAttribute="centerY" secondItem="Mwv-if-Uwh" secondAttribute="centerY" id="PuP-HB-uC8"/>
+                            <constraint firstAttribute="bottom" secondItem="e40-NY-79l" secondAttribute="bottom" id="W1B-WH-pou"/>
+                            <constraint firstItem="FTr-50-rH7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9b3-O9-cyH" secondAttribute="trailing" constant="8" id="WdB-od-GIe"/>
+                            <constraint firstItem="e40-NY-79l" firstAttribute="leading" secondItem="Mwv-if-Uwh" secondAttribute="leading" constant="8" id="ZKm-oR-3Es"/>
+                            <constraint firstAttribute="trailing" secondItem="FTr-50-rH7" secondAttribute="trailing" constant="8" id="dKm-Ae-Tvh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Mwv-if-Uwh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EKB-nd-YMf"/>
+                    <constraint firstAttribute="bottom" secondItem="Mwv-if-Uwh" secondAttribute="bottom" constant="12" id="Swq-O3-pMP"/>
+                    <constraint firstAttribute="trailing" secondItem="Mwv-if-Uwh" secondAttribute="trailing" id="br2-Og-bWo"/>
+                    <constraint firstItem="Mwv-if-Uwh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="d1L-uI-KMH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="goToProfile" destination="FTr-50-rH7" id="wEE-KM-6GV"/>
+                <outlet property="newFollowersImage" destination="e40-NY-79l" id="plz-JL-9Zs"/>
+                <outlet property="newFollowersView" destination="Mwv-if-Uwh" id="nw9-gr-e4C"/>
+            </connections>
+            <point key="canvasLocation" x="203.81679389312976" y="6.3380281690140849"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="656" height="487"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
