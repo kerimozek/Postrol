@@ -18,6 +18,8 @@
 		AB0C379C298274EF009931F0 /* StoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C379B298274EF009931F0 /* StoriesModel.swift */; };
 		AB0C379E298274F8009931F0 /* StoriesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C379D298274F8009931F0 /* StoriesVM.swift */; };
 		AB0C37A029827511009931F0 /* StoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C379F29827511009931F0 /* StoriesVC.swift */; };
+		AB0C37A4298292C0009931F0 /* StoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37A2298292C0009931F0 /* StoriesCell.swift */; };
+		AB0C37A5298292C0009931F0 /* StoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37A3298292C0009931F0 /* StoriesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AB0C379B298274EF009931F0 /* StoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesModel.swift; sourceTree = "<group>"; };
 		AB0C379D298274F8009931F0 /* StoriesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVM.swift; sourceTree = "<group>"; };
 		AB0C379F29827511009931F0 /* StoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesVC.swift; sourceTree = "<group>"; };
+		AB0C37A2298292C0009931F0 /* StoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCell.swift; sourceTree = "<group>"; };
+		AB0C37A3298292C0009931F0 /* StoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		AB0C3798298274D6009931F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C37A1298292AA009931F0 /* Cell */,
 				AB0C379F29827511009931F0 /* StoriesVC.swift */,
 			);
 			path = View;
@@ -144,6 +149,15 @@
 				AB0C379B298274EF009931F0 /* StoriesModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AB0C37A1298292AA009931F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37A2298292C0009931F0 /* StoriesCell.swift */,
+				AB0C37A3298292C0009931F0 /* StoriesCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0C3786298272ED009931F0 /* LaunchScreen.storyboard in Resources */,
+				AB0C37A5298292C0009931F0 /* StoriesCell.xib in Resources */,
 				AB0C3783298272ED009931F0 /* Assets.xcassets in Resources */,
 				AB0C3781298272EB009931F0 /* Main.storyboard in Resources */,
 			);
@@ -217,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0C37A4298292C0009931F0 /* StoriesCell.swift in Sources */,
 				AB0C379C298274EF009931F0 /* StoriesModel.swift in Sources */,
 				AB0C377E298272EB009931F0 /* MainVC.swift in Sources */,
 				AB0C377A298272EB009931F0 /* AppDelegate.swift in Sources */,

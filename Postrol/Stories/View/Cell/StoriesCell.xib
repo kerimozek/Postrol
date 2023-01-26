@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoriesCell" customModule="Postrol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="422"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="422"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-zn-Tzn">
+                        <rect key="frame" x="0.0" y="12" width="236" height="398"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="story" translatesAutoresizingMaskIntoConstraints="NO" id="Z33-Jh-kIT">
+                                <rect key="frame" x="8" y="8" width="220" height="320.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="11 Fav Person Viewed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-E6-Z66">
+                                <rect key="frame" x="44.666666666666671" y="372" width="146.66666666666663" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="128 Viewers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuN-AY-1c0">
+                                <rect key="frame" x="70.666666666666657" y="344.66666666666669" width="94.666666666666657" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z33-Jh-kIT" firstAttribute="leading" secondItem="RN2-zn-Tzn" secondAttribute="leading" constant="8" id="2zM-ac-B5i"/>
+                            <constraint firstItem="zqh-E6-Z66" firstAttribute="top" secondItem="XuN-AY-1c0" secondAttribute="bottom" constant="8" id="4n5-NB-nzX"/>
+                            <constraint firstItem="Z33-Jh-kIT" firstAttribute="top" secondItem="RN2-zn-Tzn" secondAttribute="top" constant="8" id="XFQ-Wz-GMb"/>
+                            <constraint firstItem="zqh-E6-Z66" firstAttribute="centerX" secondItem="RN2-zn-Tzn" secondAttribute="centerX" id="h8M-tN-Y4l"/>
+                            <constraint firstAttribute="bottom" secondItem="zqh-E6-Z66" secondAttribute="bottom" constant="8" id="nRV-RY-I0M"/>
+                            <constraint firstItem="XuN-AY-1c0" firstAttribute="centerX" secondItem="RN2-zn-Tzn" secondAttribute="centerX" id="teW-tn-S4B"/>
+                            <constraint firstItem="XuN-AY-1c0" firstAttribute="top" secondItem="Z33-Jh-kIT" secondAttribute="bottom" constant="16" id="vFU-KM-I1f"/>
+                            <constraint firstAttribute="trailing" secondItem="Z33-Jh-kIT" secondAttribute="trailing" constant="8" id="yfl-ec-vly"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RN2-zn-Tzn" secondAttribute="trailing" id="Jbt-t1-hOD"/>
+                <constraint firstItem="RN2-zn-Tzn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MP5-UJ-F0t"/>
+                <constraint firstItem="RN2-zn-Tzn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="ZBN-Dg-rg6"/>
+                <constraint firstAttribute="bottom" secondItem="RN2-zn-Tzn" secondAttribute="bottom" constant="12" id="mg3-9Q-0bZ"/>
+            </constraints>
+            <size key="customSize" width="236" height="422"/>
+            <connections>
+                <outlet property="favViewers" destination="zqh-E6-Z66" id="V5C-L0-bE8"/>
+                <outlet property="storiesImage" destination="Z33-Jh-kIT" id="85z-Si-F28"/>
+                <outlet property="storiesView" destination="Z33-Jh-kIT" id="Jgr-zH-qg5"/>
+                <outlet property="totalViewers" destination="XuN-AY-1c0" id="FZn-Ao-jp8"/>
+            </connections>
+            <point key="canvasLocation" x="265.64885496183206" y="105.63380281690141"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="story" width="1080" height="1920"/>
+    </resources>
+</document>
