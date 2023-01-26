@@ -9,15 +9,24 @@ import UIKit
 
 class LostFollowersCell: UITableViewCell {
 
+    
+    @IBOutlet weak var goProfile: UIButton!
+    @IBOutlet weak var lostFollowersImage: UIImageView!
+    @IBOutlet weak var username: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
+        goProfile.layer.cornerRadius = 6
+        lostFollowersImage.layer.cornerRadius = lostFollowersImage.frame.width / 2
+        lostFollowersImage.layer.masksToBounds = true
+
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func goProfile(_ sender: Any) {
+        
     }
+    
     
 }
