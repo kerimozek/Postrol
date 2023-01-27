@@ -405,6 +405,7 @@
                         <segue destination="nh4-7r-MjK" kind="relationship" relationship="viewControllers" id="NlA-9X-MXe"/>
                         <segue destination="3L1-p6-Tn3" kind="relationship" relationship="viewControllers" id="xb0-68-syf"/>
                         <segue destination="9RD-E5-03D" kind="relationship" relationship="viewControllers" id="oET-Kf-VUn"/>
+                        <segue destination="h9u-mA-BKz" kind="relationship" relationship="viewControllers" id="bNn-yc-soo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1M-Yo-4uz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -519,10 +520,68 @@
             </objects>
             <point key="canvasLocation" x="1382" y="956"/>
         </scene>
+        <!--Favorite FollowingsVC-->
+        <scene sceneID="92J-rr-8rF">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteFollowingsVC" id="BfA-o8-uIN" customClass="FavoriteFollowingsVC" customModule="Postrol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkq-DC-V7f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Followings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-3q-TnB">
+                                <rect key="frame" x="106" y="75" width="181" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="53O-dL-VEY">
+                                <rect key="frame" x="16" y="115" width="361" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NIv-oY-2Rf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="53O-dL-VEY" firstAttribute="top" secondItem="nzz-3q-TnB" secondAttribute="bottom" constant="16" id="535-wg-szO"/>
+                            <constraint firstItem="nzz-3q-TnB" firstAttribute="top" secondItem="NIv-oY-2Rf" secondAttribute="top" constant="16" id="C8E-bp-nyQ"/>
+                            <constraint firstItem="NIv-oY-2Rf" firstAttribute="bottom" secondItem="53O-dL-VEY" secondAttribute="bottom" constant="16" id="KGs-Vf-O7t"/>
+                            <constraint firstItem="NIv-oY-2Rf" firstAttribute="trailing" secondItem="53O-dL-VEY" secondAttribute="trailing" constant="16" id="bfY-pR-gHc"/>
+                            <constraint firstItem="53O-dL-VEY" firstAttribute="leading" secondItem="NIv-oY-2Rf" secondAttribute="leading" constant="16" id="fTc-UQ-KZ4"/>
+                            <constraint firstItem="nzz-3q-TnB" firstAttribute="centerX" secondItem="zkq-DC-V7f" secondAttribute="centerX" id="mRR-Fb-g1J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fOF-hC-g0i"/>
+                    <connections>
+                        <outlet property="favoriteFollowingTableView" destination="53O-dL-VEY" id="m2c-di-6ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybC-IM-CxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2307.6335877862593" y="1670.4225352112676"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tvV-0T-rSy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="h9u-mA-BKz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person.crop.circle.badge.checkmark.fill" catalog="system" id="3XS-xm-gZL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VtU-Qi-Jdh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BfA-o8-uIN" kind="relationship" relationship="rootViewController" id="26d-Zk-DXM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cft-Zc-87L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380.9160305343512" y="1670.4225352112676"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.badge.checkmark.fill" catalog="system" width="128" height="114"/>
         <image name="profile" width="656" height="487"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">

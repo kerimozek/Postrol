@@ -26,6 +26,9 @@
 		AB0C37B72982A9FE009931F0 /* NewFollowersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37B52982A9FE009931F0 /* NewFollowersCell.xib */; };
 		AB0C37BA2982AA0C009931F0 /* LostFollowersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37B82982AA0C009931F0 /* LostFollowersCell.swift */; };
 		AB0C37BB2982AA0C009931F0 /* LostFollowersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37B92982AA0C009931F0 /* LostFollowersCell.xib */; };
+		AB0C37C32983C59B009931F0 /* FavoriteFollowingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37C22983C59B009931F0 /* FavoriteFollowingsVC.swift */; };
+		AB0C37C62983C76A009931F0 /* FavoriteFollowingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37C42983C76A009931F0 /* FavoriteFollowingsCell.swift */; };
+		AB0C37C72983C76A009931F0 /* FavoriteFollowingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37C52983C76A009931F0 /* FavoriteFollowingsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		AB0C37B52982A9FE009931F0 /* NewFollowersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFollowersCell.xib; sourceTree = "<group>"; };
 		AB0C37B82982AA0C009931F0 /* LostFollowersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostFollowersCell.swift; sourceTree = "<group>"; };
 		AB0C37B92982AA0C009931F0 /* LostFollowersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LostFollowersCell.xib; sourceTree = "<group>"; };
+		AB0C37C22983C59B009931F0 /* FavoriteFollowingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFollowingsVC.swift; sourceTree = "<group>"; };
+		AB0C37C42983C76A009931F0 /* FavoriteFollowingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFollowingsCell.swift; sourceTree = "<group>"; };
+		AB0C37C52983C76A009931F0 /* FavoriteFollowingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteFollowingsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		AB0C3778298272EB009931F0 /* Postrol */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C37BD2983C556009931F0 /* Favorite Followings */,
 				AB0C37A72982A997009931F0 /* New Followers */,
 				AB0C37A62982A984009931F0 /* Lost Followers */,
 				AB0C378D29827394009931F0 /* Main */,
@@ -266,6 +273,48 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		AB0C37BD2983C556009931F0 /* Favorite Followings */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37C02983C56E009931F0 /* Model */,
+				AB0C37BF2983C567009931F0 /* ViewModel */,
+				AB0C37BE2983C563009931F0 /* View */,
+			);
+			path = "Favorite Followings";
+			sourceTree = "<group>";
+		};
+		AB0C37BE2983C563009931F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37C12983C578009931F0 /* Cell */,
+				AB0C37C22983C59B009931F0 /* FavoriteFollowingsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB0C37BF2983C567009931F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB0C37C02983C56E009931F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB0C37C12983C578009931F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37C42983C76A009931F0 /* FavoriteFollowingsCell.swift */,
+				AB0C37C52983C76A009931F0 /* FavoriteFollowingsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +376,7 @@
 				AB0C3786298272ED009931F0 /* LaunchScreen.storyboard in Resources */,
 				AB0C37BB2982AA0C009931F0 /* LostFollowersCell.xib in Resources */,
 				AB0C37A5298292C0009931F0 /* StoriesCell.xib in Resources */,
+				AB0C37C72983C76A009931F0 /* FavoriteFollowingsCell.xib in Resources */,
 				AB0C3783298272ED009931F0 /* Assets.xcassets in Resources */,
 				AB0C3781298272EB009931F0 /* Main.storyboard in Resources */,
 				AB0C37B72982A9FE009931F0 /* NewFollowersCell.xib in Resources */,
@@ -340,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0C37C62983C76A009931F0 /* FavoriteFollowingsCell.swift in Sources */,
 				AB0C37A4298292C0009931F0 /* StoriesCell.swift in Sources */,
 				AB0C37B32982A9E3009931F0 /* LostFollowersVC.swift in Sources */,
 				AB0C379C298274EF009931F0 /* StoriesModel.swift in Sources */,
@@ -352,6 +403,7 @@
 				AB0C37B62982A9FE009931F0 /* NewFollowersCell.swift in Sources */,
 				AB0C37B12982A9D3009931F0 /* NewFollowersVC.swift in Sources */,
 				AB0C379E298274F8009931F0 /* StoriesVM.swift in Sources */,
+				AB0C37C32983C59B009931F0 /* FavoriteFollowingsVC.swift in Sources */,
 				AB0C3792298273BA009931F0 /* MainVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
