@@ -13,6 +13,14 @@ class MainVC: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet weak var goAnalytics: UIButton!
+    @IBOutlet weak var bestFollowersCount: UILabel!
+    @IBOutlet weak var bestFollowers: UIView!
+    @IBOutlet weak var ghostFollowersCount: UILabel!
+    @IBOutlet weak var ghostFollowers: UIView!
+    @IBOutlet weak var favoriteFollowingsCount: UILabel!
+    @IBOutlet weak var favoriteFollowings: UIView!
+    @IBOutlet weak var secretFollowersCount: UILabel!
+    @IBOutlet weak var secretFollowers: UIView!
     @IBOutlet weak var lostFollowersCount: UILabel!
     @IBOutlet weak var earnedFollowersCount: UILabel!
     @IBOutlet weak var lostFollowers: UIView!
@@ -52,6 +60,22 @@ class MainVC: UIViewController {
         lostFollowers.layer.borderWidth = 0.5
         lostFollowers.layer.borderColor = UIColor.black.cgColor
         lostFollowers.layer.cornerRadius = 16
+        
+        bestFollowers.layer.borderWidth = 0.5
+        bestFollowers.layer.borderColor = UIColor.black.cgColor
+        bestFollowers.layer.cornerRadius = 16
+        
+        ghostFollowers.layer.borderWidth = 0.5
+        ghostFollowers.layer.borderColor = UIColor.black.cgColor
+        ghostFollowers.layer.cornerRadius = 16
+        
+        favoriteFollowings.layer.borderWidth = 0.5
+        favoriteFollowings.layer.borderColor = UIColor.black.cgColor
+        favoriteFollowings.layer.cornerRadius = 16
+        
+        secretFollowers.layer.borderWidth = 0.5
+        secretFollowers.layer.borderColor = UIColor.black.cgColor
+        secretFollowers.layer.cornerRadius = 16
         
     }
 
