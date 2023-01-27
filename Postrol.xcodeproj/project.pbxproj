@@ -29,6 +29,7 @@
 		AB0C37C32983C59B009931F0 /* FavoriteFollowingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37C22983C59B009931F0 /* FavoriteFollowingsVC.swift */; };
 		AB0C37C62983C76A009931F0 /* FavoriteFollowingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37C42983C76A009931F0 /* FavoriteFollowingsCell.swift */; };
 		AB0C37C72983C76A009931F0 /* FavoriteFollowingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB0C37C52983C76A009931F0 /* FavoriteFollowingsCell.xib */; };
+		AB0C37CA2983CDE1009931F0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C37C92983CDE1009931F0 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AB0C37C22983C59B009931F0 /* FavoriteFollowingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFollowingsVC.swift; sourceTree = "<group>"; };
 		AB0C37C42983C76A009931F0 /* FavoriteFollowingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFollowingsCell.swift; sourceTree = "<group>"; };
 		AB0C37C52983C76A009931F0 /* FavoriteFollowingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteFollowingsCell.xib; sourceTree = "<group>"; };
+		AB0C37C92983CDE1009931F0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		AB0C3778298272EB009931F0 /* Postrol */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C37C82983CDCC009931F0 /* Login */,
 				AB0C37BD2983C556009931F0 /* Favorite Followings */,
 				AB0C37A72982A997009931F0 /* New Followers */,
 				AB0C37A62982A984009931F0 /* Lost Followers */,
@@ -315,6 +318,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AB0C37C82983CDCC009931F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C37C92983CDE1009931F0 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,6 +411,7 @@
 				AB0C37A029827511009931F0 /* StoriesVC.swift in Sources */,
 				AB0C37BA2982AA0C009931F0 /* LostFollowersCell.swift in Sources */,
 				AB0C3794298273C8009931F0 /* MainModel.swift in Sources */,
+				AB0C37CA2983CDE1009931F0 /* LoginVC.swift in Sources */,
 				AB0C37B62982A9FE009931F0 /* NewFollowersCell.swift in Sources */,
 				AB0C37B12982A9D3009931F0 /* NewFollowersVC.swift in Sources */,
 				AB0C379E298274F8009931F0 /* StoriesVM.swift in Sources */,
