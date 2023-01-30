@@ -27,8 +27,6 @@ class NewFollowersVC: UIViewController {
         newFollowersTableView.dataSource = self
         newFollowersTableView.register(.init(nibName: newFollowers, bundle: nil), forCellReuseIdentifier: newFollowers)
     }
-  
-
 }
 
 
